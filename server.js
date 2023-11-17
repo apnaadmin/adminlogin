@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000;
 
 // Enable CORS for specific origins
 const corsOptions = {
-  origin: ['https://codecomet.in', 'http://localhost:3000', 'https://demo.apnividya.in', 'https://apnividya.in', 'https://site.apnividya.in'],
+  origin: ['https://demo.apnividya.in', 'https://apnividya.in', 'https://site.apnividya.in'],
   optionsSuccessStatus: 200,
 };
 
