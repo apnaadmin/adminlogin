@@ -41,6 +41,9 @@ const UserSchema = new mongoose.Schema({
   qrCode: String,
   transaction: String,
   agree: Boolean,
+  description: String,
+  imageurl: String,
+  phonenumber: String,
 });
 
 const User = mongoose.model('User', UserSchema);
@@ -60,6 +63,9 @@ app.post('/api/users', async (req, res) => {
     experience,
     qrCode,
     transaction,
+    phonenumber,
+    description,
+    imageurl,
     agree
   } = req.body;
 
@@ -80,6 +86,9 @@ app.post('/api/users', async (req, res) => {
       qrCode,
       transaction,
       agree,
+      phonenumber,
+      description,
+      imageurl,
     });
 
     // Save the user to the database
